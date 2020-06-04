@@ -18,22 +18,17 @@ P = download("https://raw.githubusercontent.com/nassarhuda/easy_data/master/prog
 #head didnt work
 ;head P
 
-#=
-readdlm(source,
-    delim::AbstractChar,
-    T::Type,
-    eol::AbstractChar;
-    header=false,
-    skipstart=0,
-    skipblanks=true,
-    use_mmap,
-    quotes=true,
-    dims,
-    comments=false,
-    comment_char='#')
-=#
 P,H = readdlm("programminglanguages.csv",',';header=true);
 
 P
-
 H
+
+[20]
+# Q1: Which year was was a given language invented?
+function year_created(P,language::String)
+    loc = findfirst(P[:,2] .== language)
+    !isnothing(loc) && return P[loc,1]
+    error("Language not found !!! ")
+end
+​
+# Call the function like this :  year_created(P,"Julia")
