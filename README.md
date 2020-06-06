@@ -1,6 +1,4 @@
 # Julia-Repo
 Sharing Work on Julia
 - 6/1 - Ankit to test Push from Git to GitHub - Success
-- 6/1 - Ankit to test fetch i.e. GitHub to Git - Success
-- 6/2 - Ankit to test Push from Git to GitHub - Success
-- 6/2 - Ankit to test fetch i.e. GitHub to Git - 
+- 6/6 - Added - (02. Linear Algebra) - This is main
